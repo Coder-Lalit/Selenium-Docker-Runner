@@ -4,7 +4,7 @@ pipeline {
 	}
 	stages {
 		stage ("Pull latest docker image") {
-			step {
+			steps {
 				sh 'docker pull lalitdas/mydocker'
 			}
 
