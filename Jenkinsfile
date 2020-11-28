@@ -1,6 +1,6 @@
 pipeline {
 	agent {
-		label:'Docker'
+		label 'Docker'
 	}
 	stages {
 		stage ("Making Required Server Up") {
