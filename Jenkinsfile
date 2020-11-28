@@ -9,7 +9,9 @@ pipeline {
 			}
 		}
 		stage ("Running Test cases") {
-			sh 'docker-compose up testng'
+			steps {
+				sh 'docker-compose up testng'
+			}
 		}
 	}
 	post {
